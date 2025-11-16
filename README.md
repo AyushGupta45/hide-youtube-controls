@@ -5,7 +5,7 @@ A lightweight Chrome extension that allows you to hide YouTube video controls wi
 ## Features
 
 - 🎯 **One-click toggle** - Hide/show controls instantly with a keyboard shortcut
-- ⌨️ **Easy shortcut** - Press `Ctrl+M` (Windows/Linux) or `Cmd+M` (Mac) to toggle
+- ⌨️ **Easy shortcut** - Press `Ctrl+Shift+H` (Windows/Linux) or `Cmd+Shift+H` (Mac) to toggle
 - 🧹 **Clean interface** - Removes all video controls, overlays, and grids
 - ⚡ **Lightweight** - Minimal performance impact
 - 🔒 **Privacy-focused** - No data collection, works entirely locally
@@ -43,6 +43,12 @@ A lightweight Chrome extension that allows you to hide YouTube video controls wi
    - You should see "YouTube Controls Hider" in your extensions
    - The extension icon will appear in your browser toolbar
 
+6. **Verify the keyboard shortcut** (Optional)
+   - The extension should automatically use `Ctrl+Shift+H` (Windows/Linux) or `Cmd+Shift+H` (Mac)
+   - If the shortcut doesn't work, it may be conflicting with another extension
+   - Go to `chrome://extensions/shortcuts` to verify or change the shortcut
+   - Click in the shortcut field and press your desired key combination
+
 ### Method 2: Install from Chrome Web Store (Coming Soon)
 
 _This extension will be available on the Chrome Web Store soon._
@@ -53,7 +59,7 @@ _This extension will be available on the Chrome Web Store soon._
    - Open any YouTube video in your browser
 
 2. **Toggle controls**
-   - Press `Ctrl+M` (Windows/Linux) or `Cmd+M` (Mac)
+   - Press `Ctrl+Shift+H` (Windows/Linux) or `Cmd+Shift+H` (Mac)
    - The video controls will hide/show instantly
 
 3. **Take screenshots or record**
@@ -64,8 +70,8 @@ _This extension will be available on the Chrome Web Store soon._
 
 | Platform | Shortcut | Action |
 |----------|----------|--------|
-| Windows/Linux | `Ctrl+M` | Toggle video controls |
-| Mac | `Cmd+M` | Toggle video controls |
+| Windows/Linux | `Ctrl+Shift+H` | Toggle video controls |
+| Mac | `Cmd+Shift+H` | Toggle video controls |
 
 ### Customize Shortcuts (Optional)
 
@@ -109,9 +115,10 @@ hide-youtube-controls/
 
 ### Shortcut not responding?
 
-1. **Check for conflicts** - Another extension might be using the same shortcut
-2. **Customize the shortcut** at `chrome://extensions/shortcuts`
-3. **Reload the extension** from the extensions page
+1. **Check the shortcut** - Go to `chrome://extensions/shortcuts` and verify the shortcut is set to `Ctrl+Shift+H` (or your preferred combination)
+2. **Check for conflicts** - Another extension might be using the same shortcut
+3. **Try a different shortcut** - If there's a conflict, assign a different key combination
+4. **Reload the extension** from the extensions page
 
 ### Controls won't hide?
 
