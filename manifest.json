@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Controls Hider",
+  "version": "1.0",
+  "description": "Hide YouTube video controls with a keyboard shortcut for clean screenshots",
+  "icons": {
+    "16": "images/logo-16.png",
+    "48": "images/logo-48.png",
+    "128": "images/logo-128.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "toggle-controls": {
+      "suggested_key": {
+        "default": "Ctrl+M",
+        "mac": "Command+M"
+      },
+      "description": "Toggle YouTube video controls"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
